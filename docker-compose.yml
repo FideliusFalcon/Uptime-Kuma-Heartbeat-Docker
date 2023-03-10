@@ -7,4 +7,4 @@ services:
       context: .
     environment:
       push_url: ""
-      push_interval: 58
+      push_interval: 55

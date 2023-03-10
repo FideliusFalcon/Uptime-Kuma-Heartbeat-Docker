@@ -15,7 +15,7 @@ try:
         raise Exception("Interval is not a integer")
         exit
 except:
-    interval = 58
+    interval = 55
 
 while True:
     r = requests.get(url)
