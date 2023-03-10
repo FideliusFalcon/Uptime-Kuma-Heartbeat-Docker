@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  uptime-heartbeat:
+    image: "uptime-heartbeat"
+    build:
+      context: .
+    environment:
+      push_url: ""
+      push_interval: 58
