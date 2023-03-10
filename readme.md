@@ -1,8 +1,8 @@
-# Uptime Kuma Heathbeat Docker
-This is a very simple heathbeat build with Python and deployed with Docker. All configuration is made with environment variables and easy to configure in the `docker-compose.yml` file.
+# Uptime Kuma Heartbeat Docker
+This is a very simple heartbeat build with Python and deployed with Docker. All configuration is made with environment variables and easy to configure in the `docker-compose.yml` file.
 
 ## Requirements
-* Uptime Kuma installed, with access from this agent/heathbeat
+* Uptime Kuma installed, with access from this agent/heartbeat
 * Docker installed on the host
 
 ## Deploy
