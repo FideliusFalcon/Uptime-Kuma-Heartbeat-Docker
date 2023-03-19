@@ -8,3 +8,4 @@ services:
     environment:
       push_url: ""
       push_interval: 55
+    restart: on-failure
