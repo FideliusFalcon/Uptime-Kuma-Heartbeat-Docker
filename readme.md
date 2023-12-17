@@ -14,3 +14,5 @@ This is a very simple heartbeat build with Python and deployed with Docker. All 
    ```
    docker compose up -d
    ```
+### Other settings
+You can use `cf_access_client_id` and `cf_access_client_secret` to set a service token for Cloudflare Access. Otherwise delete these in the docker-compose.yml configuration

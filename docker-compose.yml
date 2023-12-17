@@ -8,4 +8,6 @@ services:
     environment:
       push_url: ""
       push_interval: 55
+      cf_access_client_id: 
+      cf_access_client_secret: 
     restart: on-failure

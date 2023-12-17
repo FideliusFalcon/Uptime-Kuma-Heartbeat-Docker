@@ -17,7 +17,14 @@ try:
 except:
     interval = 55
 
+headers = {}
+try:
+    headers["CF-Access-Client-Id"] os.getenv("cf_access_client_id")
+    headers["CF-Access-Client-Secret"] = os.getenv("cf_access_client_secret")
+except:
+    pass
+
 while True:
-    r = requests.get(url)
+    r = requests.get(url, headers = headers)
     print(r.json())
     sleep(interval)
