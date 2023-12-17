@@ -19,12 +19,12 @@ except:
 
 headers = {}
 try:
-    headers["CF-Access-Client-Id"] os.getenv("cf_access_client_id")
+    headers["CF-Access-Client-Id"] = os.getenv("cf_access_client_id")
     headers["CF-Access-Client-Secret"] = os.getenv("cf_access_client_secret")
 except:
     pass
 
 while True:
     r = requests.get(url, headers = headers)
-    print(r.json())
+    print(r.status_code)
     sleep(interval)
